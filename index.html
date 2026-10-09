@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#db2777">
+  <title>EdVi Aurora Makeup | PDV</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">EA</div>
+        <div><strong>EdVi Aurora</strong><span>MAKEUP • PDV</span></div>
+      </div>
+      <nav id="mainNav">
+        <button class="nav-item active" data-page="dashboard">⌂ <span>Visão geral</span></button>
+        <button class="nav-item" data-page="pdv">▣ <span>Frente de caixa</span><kbd>F4</kbd></button>
+        <button class="nav-item" data-page="products">◇ <span>Produtos</span></button>
+        <button class="nav-item" data-page="customers">♡ <span>Clientes</span></button>
+        <button class="nav-item" data-page="sales">▤ <span>Vendas</span></button>
+        <button class="nav-item" data-page="expenses">− <span>Despesas</span></button>
+        <button class="nav-item" data-page="reports">▥ <span>Relatórios</span></button>
+        <button class="nav-item" data-page="settings">⚙ <span>Configurações</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="storage-status"><i></i><span>Dados salvos neste navegador</span></div>
+        <small>Versão inicial 1.0</small>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div><div class="eyebrow">PAINEL DE CONTROLE</div><h1 id="pageTitle">Visão geral</h1></div>
+        <div class="top-actions"><span class="today" id="todayLabel"></span><button class="button primary" data-goto="pdv">＋ Nova venda</button></div>
+      </header>
+      <section id="pageContent" class="page-content"></section>
+      <footer>EdVi Aurora Makeup <span>•</span> Realce sua beleza, ilumine sua essência.</footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <div id="modalRoot"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
